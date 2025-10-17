@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel ="icon" type="image/x-icon" href="https://i.pinimg.com/1200x/6c/4e/d3/6c4ed3de6aeb48310cc941b33b18f4e3.jpg">
+
+<title>My Portfolio</title>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    color: #fff;
+    background: #111;
+    overflow-x: hidden;
+  }
+
+  /* HEADER */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
+    z-index: 100;
+
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+  }
+
+  nav a {
+    color: #f8f3f3;
+    margin-left: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  nav a:hover {
+    color: #ffd43b;
+  }
+
+  /* HERO SECTION */
+  .hero {
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80")
+      center/cover no-repeat;
+    
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 15px;
+
+  }
+
+  .hero h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+    margin-bottom: 10px;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  }
+
+  /* SKILLS SECTION */
+  #skills {
+    background: #1a1a1a;
+    padding: 100px 10%;
+    text-align: center;
+  }
+
+  #skills h2 {
+    font-size: 2.3rem;
+    margin-bottom: 40px;
+    color: #ffd43b;
+  }
+
+  .skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  .skill-box {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 25px 40px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #ffffff;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+  }
+
+  .skill-box:hover {
+    background: #fff83b;
+    color: #111;
+    transform: translateY(-8px);
+
+  }
+
+  /* CONTACT SECTION */
+  #contact {
+    background: #1a1a1a;
+    padding: 100px 10%;
+    text-align: center;
+  }
+
+  #contact h2 {
+    font-size: 2.3rem;
+    margin-bottom: 40px;
+    color: #ffd43b;
+  }
+
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  input,
+  textarea {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background: rgba(152, 151, 151, 0.224);
+    color: #fff;
+    font-size: 1rem;
+    transition: box-shadow 0.3s ease;
+  }
+
+  input:focus,
+  textarea:focus {
+    box-shadow: 0 0 0 2px #ffd43b;
+  }
+
+  button {
+    background: #ffd43b;
+    color: #111;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+
+  button:hover {
+    background: #e6c200;
+  }
+
+  footer {
+    background: #000;
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+  }
+
+  @media (max-width: 768px) {
+    .hero h2 {
+      font-size: 2rem;
+    }
+
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <h2>Hi, I'm Rohit👋</h2>
+    <p>Welcome to my portfolio website</p>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+      <div class="skill-box">HTML</div>
+      <div class="skill-box">CSS</div>
+      <div class="skill-box">JavaScript</div>
+      <div class="skill-box">React</div>
+      <div class="skill-box">Bootstrap</div>
+      <div class="skill-box">Git & GitHub</div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <h2> Contact Me 🤙📞</h2>
+    
+
+   <form action="https://formspree.io/f/your_form_id_here" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message </button>
+  
+  
+</form>
+
+  </section>
+
+  <footer>
+    <p>© 2025 My Portfolio | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // Simple form message alert
+    document.getElementById("contactForm").addEventListener("submit", function) (e) 
+      e.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      if (!name || !email || !message) {
+      
+
+      this.reset();
+    };
+  </script>
+</body>
+</html>
